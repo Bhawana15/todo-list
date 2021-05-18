@@ -1,3 +1,6 @@
+# A React based Todo-List Application to learn the basics of React.js Library.
+I have created this react-app by referring to a Youtube Channel Code With Harry.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
