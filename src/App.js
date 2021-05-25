@@ -2,9 +2,23 @@ import './App.css';
 import Header from "./MyComponents/Header.js";
 import {Todos} from "./MyComponents/Todos.js";
 import {Footer} from "./MyComponents/Footer.js";
+import React, {useState} from 'react';
+import {AddTodo} from "./MyComponents/AddTodo.js";
 
 function App() {
-  let todos = [
+  const onDelete = (todo) => {
+    console.log("I am onDelete of todo", todo);
+
+    // Deleting this was doesnot works in react
+    // let index = todos.indexOf(todo);
+    // todos.splice(index, 1);
+
+    setTodos(todos.filter((e) => {
+      return e!==todo;
+    }));
+  }
+
+  const [todos, setTodos] = useState([
     {
       sno : 1,
       title : "Go to the Market",
@@ -30,11 +44,13 @@ function App() {
       title : "Go to the Home",
       desc : "You need to go to the home and take rest"
     }
-  ]
+  ]);
+
   return (
     <>
         <Header title="My Todo List" searchBar={true}/>
-        <Todos todos={todos}/>
+        <AddTodo/>
+        <Todos todos={todos} onDelete={onDelete}/>
         <Footer/>
     </>
   );
