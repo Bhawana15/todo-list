@@ -3,32 +3,16 @@ I have created this react-app by referring to a Youtube Channel Code With Harry.
 
 # Getting started with the project :
 
-### `npm start`
+- First you need to create a new react app using command $create-react-app
+- Enter into the app repo and run $npm start or $yarn start
+- To create the app from the scratch you only need a index.hhtml file in public folder and index.css, index.js, app.js files in the src folder
+- You need to add components file to the src folder and include it in the index.js file
 
-Runs the app in the development mode.\
-Open http://localhost:3000 to view it in the browser.
+The condition of my todo-list react app now is 👍
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![todo-list](https://user-images.githubusercontent.com/44014956/123083317-91414700-d43d-11eb-821f-442083ef8a7e.png)
 
-### `npm test`
+The development of this app is in process.
 
-Launches the test runner in the interactive watch mode.\
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
